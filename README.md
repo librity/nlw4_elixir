@@ -25,6 +25,7 @@ Built-in:
 ## External Docs
 
 - https://elixir-lang.org/docs.html
+- https://elixir-lang.org/getting-started/basic-types.html
 
 - https://hexdocs.pm/elixir/Kernel.html
 - https://hexdocs.pm/iex/IEx.Helpers.html
@@ -35,6 +36,7 @@ Built-in:
 - https://www.tutorialspoint.com/elixir/elixir_lists_and_tuples.htm
 - https://www.frankelydiaz.com/blog/i-learned-today-elixir-pipe-operator-calling-a-function-with-more-than-1-parameter
 - https://stackoverflow.com/questions/66379509/elixir-decimal-cast-and-dont-allow-negative-numbers
+- https://stackoverflow.com/questions/31990134/how-to-convert-map-keys-from-strings-to-atoms-in-elixir
 
 ## Postgres
 
@@ -86,6 +88,8 @@ $ mix ecto.drop
 # Create database
 $ mix ecto.create
 ```
+
+## Elixir Commands
 
 ```elixir
 # Calling a function from a module
@@ -158,7 +162,7 @@ Compiling 1 file (.ex)
 > my_map = %{result: :ok, total: 37}
 > my_map[:result]
 :ok
-> my_map[:total]
+> my_map.total
 37
 
 > alias Rocketpay.Numbers
