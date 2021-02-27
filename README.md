@@ -21,22 +21,31 @@ Built-in:
 
 - `POST` http://localhost:4000/api/accounts/:id/deposit
 - `POST` http://localhost:4000/api/accounts/:id/withdraw
+- `POST` http://localhost:4000/api/accounts/transaction
 
 ## External Docs
 
 - https://elixir-lang.org/docs.html
 - https://elixir-lang.org/getting-started/basic-types.html
+- https://elixir-lang.org/getting-started/debugging.html
 
 - https://hexdocs.pm/elixir/Kernel.html
+- https://hexdocs.pm/elixir/master/Task.html
 - https://hexdocs.pm/iex/IEx.Helpers.html
 - https://hexdocs.pm/phoenix/Phoenix.html
 - https://hexdocs.pm/ecto/Ecto.html
 - https://hexdocs.pm/decimal/readme.html
+- https://hexdocs.pm/excoveralls/readme.html
+- https://github.com/rrrene/credo/
+
+## Random Tutorials and Questions
 
 - https://www.tutorialspoint.com/elixir/elixir_lists_and_tuples.htm
 - https://www.frankelydiaz.com/blog/i-learned-today-elixir-pipe-operator-calling-a-function-with-more-than-1-parameter
 - https://stackoverflow.com/questions/66379509/elixir-decimal-cast-and-dont-allow-negative-numbers
 - https://stackoverflow.com/questions/31990134/how-to-convert-map-keys-from-strings-to-atoms-in-elixir
+- https://stackoverflow.com/questions/28594646/getting-the-current-date-and-or-time-in-elixir
+- https://stackoverflow.com/questions/47818241/concise-way-to-run-code-0-to-n-times-in-elixir
 
 ## Postgres
 
@@ -55,7 +64,7 @@ $ mix archive.install hex phx_new 1.5.7
 # Create a Phoenix API (like rails new)
 $ mix phx.new rocketpay --no-webpack --no-html
 
-# Setup Ecto (function relational mapper) and check database connection (like rails db:setup)
+# Setup Ecto (database wrapper and query generator) and check database connection (like rails db:setup)
 $ mix ecto.setup
 
 # Install dependencies (like bundle install)
@@ -63,6 +72,9 @@ $ mix deps.get
 
 # Create config file for credo (linter, like rubocop)
 $ mix credo gen.config
+
+# Run credo
+$ mix credo
 
 # Start the server (like rails s)
 $ mix phx.server
@@ -87,6 +99,12 @@ $ mix ecto.drop
 
 # Create database
 $ mix ecto.create
+
+# Generate code coverage report
+$ mix test --cover
+
+# Generate an HTML code coverage report (just like the coveralls gem)
+$ mix coveralls.html
 ```
 
 ## Elixir Commands
@@ -202,4 +220,7 @@ Compiling 1 file (.ex)
 
 > Rocketpay.Repo.all(Rocketpay.User)
 > Rocketpay.Repo.all(Rocketpay.User) |> Rocketpay.Repo.preload(:account)
+
+> Base.encode64("foobar:123456")
+"Zm9vYmFyOjEyMzQ1Ng=="
 ```

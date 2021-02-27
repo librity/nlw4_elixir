@@ -23,6 +23,11 @@ config :rocketpay, Rocketpay.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
 
+# Configures the world's worst authentication system
+config :rocketpay, :basic_auth,
+  username: "foobar",
+  password: "123456"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

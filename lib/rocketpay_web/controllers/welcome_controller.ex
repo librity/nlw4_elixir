@@ -16,6 +16,7 @@ defmodule RocketpayWeb.WelcomeController do
   defp handle_response({:ok, %{total: total}}, connection) do
     connection
     |> put_status(:ok)
+    # Use inspects for debugging
     # |> IO.inspect()
     |> json(%{message: "Here is your number: #{total}"})
   end
