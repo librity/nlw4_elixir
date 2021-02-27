@@ -10,6 +10,8 @@ defmodule Rocketpay.Account do
   @required_params [:balance, :user_id]
 
   schema "accounts" do
+    # Floats are not recommended for monetary data for rounding reasons.
+    # Decimals take more memory and flops, but are more precise.
     field :balance, :decimal
 
     belongs_to :user, User

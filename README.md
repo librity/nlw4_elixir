@@ -30,9 +30,11 @@ Built-in:
 - https://hexdocs.pm/iex/IEx.Helpers.html
 - https://hexdocs.pm/phoenix/Phoenix.html
 - https://hexdocs.pm/ecto/Ecto.html
+- https://hexdocs.pm/decimal/readme.html
 
 - https://www.tutorialspoint.com/elixir/elixir_lists_and_tuples.htm
 - https://www.frankelydiaz.com/blog/i-learned-today-elixir-pipe-operator-calling-a-function-with-more-than-1-parameter
+- https://stackoverflow.com/questions/66379509/elixir-decimal-cast-and-dont-allow-negative-numbers
 
 ## Postgres
 
