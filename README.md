@@ -4,11 +4,11 @@ A payments backend using Elixir, Phoenix and Ecto.
 
 ## Endpoints
 
-Built-in:
+Built-in
 
 - `GET` http://localhost:4000/dashboard/home
 
-`WelocomeController`:
+`WelocomeController`
 
 - `GET` http://localhost:4000/api/
 - `GET` http://localhost:4000/api/total/:filename
